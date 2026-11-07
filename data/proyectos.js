@@ -172,7 +172,7 @@ window.PROYECTOS = [
     ],
     rol: "Responsable del armado e implementación de los circuitos electrónicos, soldadura de componentes y pruebas de prototipos. Participé en la integración de las etapas electrónicas y en la verificación del funcionamiento del sistema.",
     enlaces: [
-      { texto: "Informe técnico (PDF)", url: "documentos/informe-final.pdf" }
+      { texto: "Informe técnico (PDF)", url: "https://github.com/Jesus-gutierrezA/portafolio-electronica/blob/ee4273a5170e59127d6818b94fd2740b391bf1bc/proyectos/Amplificador-Estereo-Ecualizador/informe-final.pdf" }
     ]
   },
   
