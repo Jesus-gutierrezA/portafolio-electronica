@@ -181,7 +181,7 @@ window.PROYECTOS = [
     resultados: [],
     rol: "",
     enlaces: [{ texto: "Notebook", url: "" }]
-  }
+  },
   
   {
     id: "Amplificador-Estereo-Ecualizador",
