@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Portafolio · Ingeniería Electrónica</title>
+<meta name="description" content="Proyectos de ingeniería electrónica: resultado final, esquemáticos, circuitos impresos y descripción.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔌</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,400..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/estilos.css">
+</head>
+<body data-pagina="inicio">
+<header class="encabezado">
+  <svg class="pistas" viewBox="0 0 1200 420" preserveAspectRatio="xMaxYMid slice" aria-hidden="true">
+    <path d="M1220 60 H980 L920 120 H760 L700 180"/>
+    <path d="M1220 140 H1040 L980 200 H860 L800 260 H690"/>
+    <path d="M1220 300 H1000 L940 240 H880"/>
+    <path d="M1220 380 H900 L840 320 H740 L700 280"/>
+    <circle cx="700" cy="180" r="9"/><circle cx="690" cy="260" r="9"/>
+    <circle cx="880" cy="240" r="9"/><circle cx="700" cy="280" r="9"/>
+    <circle cx="920" cy="120" r="5"/><circle cx="980" cy="200" r="5"/>
+  </svg>
+  <div class="contenedor">
+    <h1 class="nombre" id="nombre"></h1>
+    <p class="titulo-autor" id="titulo-autor"></p>
+    <p class="intro" id="intro"></p>
+    <ul class="enlaces-autor" id="enlaces-autor"></ul>
+  </div>
+</header>
+<main class="contenedor">
+  <h2 class="visually-hidden" style="position:absolute;left:-9999px">Proyectos</h2>
+  <div class="filtros" id="filtros" role="group" aria-label="Filtrar por área"></div>
+  <div class="lista" id="lista"></div>
+</main>
+<footer class="pie"><div class="contenedor" id="pie"></div></footer>
+<script src="data/proyectos.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
