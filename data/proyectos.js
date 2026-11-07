@@ -182,4 +182,51 @@ window.PROYECTOS = [
     rol: "",
     enlaces: [{ texto: "Notebook", url: "" }]
   }
+  
+  {
+    id: "amplificador-estereo",
+    titulo: "Amplificador estéreo con ecualizador pasivo integrado",
+    resumen: "Sistema de audio estéreo con filtros pasivos de tres bandas, preamplificación MOSFET, amplificación TDA2050 y analizador de espectro con Arduino.",
+    contexto: "Proyecto académico · Electrónica II · Universidad del Magdalena",
+    anio: "2024",
+    area: "Analógica",
+    estado: "Terminado",
+    destacado: false,
+    portada: "foto-final.jpg",
+    galeria: [
+      { archivo: "foto-final.jpg", titulo: "Amplificador terminado" },
+      { archivo: "ecualizador.jpg", titulo: "Ecualizador implementado" },
+      { archivo: "pcb.png", titulo: "Diseño de circuito impreso" },
+      { archivo: "preamplificador.jpg", titulo: "Etapa de preamplificación con MOSFET 2N7000" },
+      { archivo: "esquematico.png", titulo: "Esquemático del sistema" },
+      { archivo: "simulacion-amplificador.jpg", titulo: "Simulación de amplificación" },
+      { archivo: "respuesta-frecuencia.png", titulo: "Diagramas de Bode" }
+    ],
+    descripcion: [
+      "Diseño y construcción de un amplificador de audio estéreo con ecualizador pasivo integrado, capaz de controlar independientemente las frecuencias bajas, medias y altas.",
+      "El sistema incorpora filtros pasivos RC de segundo orden, una etapa de preamplificación basada en el transistor MOSFET 2N7000 y etapas de amplificación de potencia con circuitos integrados TDA2050.",
+      "Como elemento adicional, se desarrolló un analizador de espectro mediante Arduino Nano, utilizando la biblioteca FHT para procesar la señal de audio y visualizar sus componentes de frecuencia en una matriz LED WS2812B de 8x32.",
+      "El diseño físico del equipo se inspiró en la cultura picotera del Caribe colombiano."
+    ],
+    tecnologias: [
+      "TDA2050",
+      "MOSFET 2N7000",
+      "Arduino Nano",
+      "WS2812B 8x32",
+      "Filtros RC",
+      "PCB",
+      "FHT"
+    ],
+    resultados: [
+      "Construcción física de un amplificador estéreo.",
+      "Implementación de ecualización de bajos, medios y altos.",
+      "Diseño y fabricación de circuitos impresos.",
+      "Integración de un analizador de espectro visual con matriz LED."
+    ],
+    rol: "Responsable del armado e implementación de los circuitos electrónicos, soldadura de componentes y pruebas de prototipos. Participé en la integración de las etapas electrónicas y en la verificación del funcionamiento del sistema.",
+    enlaces: [
+      { texto: "Informe técnico (PDF)", url: "documentos/informe-final.pdf" }
+    ]
+  }
+
 ];
