@@ -8,14 +8,14 @@
 */
 
 window.AUTOR = {
-  nombre: "Juan",
+  nombre: "Jesus Gutierrez",
   titulo: "Ingeniería Electrónica · Universidad del Magdalena",
   intro: "Proyectos de hardware, control, IoT y datos que diseñé y construí durante la carrera, con su resultado final, esquemáticos y circuitos impresos.",
   ubicacion: "Santa Marta, Colombia",
   enlaces: [
     { texto: "GitHub", url: "https://github.com/TU-USUARIO" },
-    { texto: "LinkedIn", url: "https://www.linkedin.com/in/TU-PERFIL" },
-    { texto: "Correo", url: "mailto:tu-correo@ejemplo.com" },
+    { texto: "LinkedIn", url: "www.linkedin.com/in/jesus-gutiérrez-a8a6073b0" },
+    { texto: "Correo", url: "mailto:jesusgutierreza.15@gmail.com" },
     { texto: "Hoja de vida (PDF)", url: "assets/hoja-de-vida.pdf" }
   ]
 };
