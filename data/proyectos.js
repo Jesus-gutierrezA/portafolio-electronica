@@ -81,60 +81,7 @@ window.PROYECTOS = [
     rol: "",
     enlaces: [{ texto: "Código fuente", url: "" }]
   },
-  {
-    id: "llave-acustica-pll",
-    titulo: "Llave acústica con PLL",
-    resumen: "Cerradura que abre una puerta solo al detectar un tono de 1 kHz ±5 %, con PLL CD4046 y etapas analógicas.",
-    contexto: "Proyecto integrador · Electrónica III",
-    anio: "2026",
-    area: "Analógica",
-    estado: "En desarrollo",
-    destacado: false,
-    portada: "foto-final.jpg",
-    galeria: [
-      { archivo: "foto-final.jpg", titulo: "Maqueta final" },
-      { archivo: "esquematico.png", titulo: "Esquemático" },
-      { archivo: "pcb.png", titulo: "Circuito impreso" }
-    ],
-    descripcion: [
-      "Sistema de acceso que reconoce un tono de 1 kHz con un margen de aceptación de ±5 % y abre la puerta de una maqueta de casa.",
-      "La señal pasa por una etapa de adquisición y amplificación, un filtro activo pasabanda MFB con Q = 5 y un PLL CD4046 que se engancha a la frecuencia objetivo. Un comparador y un temporizador 555 generan la orden de apertura, y un microcontrolador se usa únicamente para mover el servomotor de la puerta."
-    ],
-    tecnologias: ["CD4046", "Filtro MFB", "555", "Comparador", "Servomotor"],
-    resultados: [
-      "Acondicionamiento y filtro MFB funcionando"
-    ],
-    rol: "Trabajo en grupo. Describe aquí tu parte.",
-    enlaces: [{ texto: "Informe (PDF)", url: "" }]
-  },
-  {
-    id: "balanza-pid-bldc",
-    titulo: "Balancín PID con motores BLDC",
-    resumen: "Barra pivotada de 55 cm que se equilibra por empuje diferencial de dos motores sin escobillas, con ESP32 y MPU6050.",
-    contexto: "Proyecto de control",
-    anio: "",
-    area: "Control",
-    estado: "Terminado",
-    destacado: false,
-    portada: "foto-final.jpg",
-    galeria: [
-      { archivo: "foto-final.jpg", titulo: "Montaje final" },
-      { archivo: "esquematico.png", titulo: "Esquemático" },
-      { archivo: "simulink.png", titulo: "Modelo en Simulink" },
-      { archivo: "respuesta.png", titulo: "Respuesta al escalón" }
-    ],
-    descripcion: [
-      "Balancín de un eje: una barra de 55 cm pivotada en el centro, con un motor BLDC 2212 y hélice en cada extremo. El ESP32 lee la inclinación con un MPU6050 y controla los dos ESC de 30 A para mantener la barra horizontal.",
-      "El sistema se modeló en Simulink, primero como modelo no lineal completo y luego reducido a primer orden para la velocidad angular. La respuesta al escalón en lazo abierto se reprodujo en el hardware para estimar la fricción real del pivote y ajustar las ganancias del PID."
-    ],
-    tecnologias: ["ESP32", "MPU6050", "BLDC 2212", "ESC 30 A", "MATLAB / Simulink"],
-    resultados: [
-      "Modelo de primer orden validado en simulación",
-      "Prueba de escalón en hardware con registro CSV"
-    ],
-    rol: "",
-    enlaces: [{ texto: "Código y modelos", url: "" }]
-  },
+  
   {
     id: "vumetro-ws2812b",
     titulo: "Vúmetro en matriz LED",
@@ -227,6 +174,53 @@ window.PROYECTOS = [
     enlaces: [
       { texto: "Informe técnico (PDF)", url: "documentos/informe-final.pdf" }
     ]
-  }
+  },
+  
+{
+  id: "towercopter-pid",
+  titulo: "Control PID de altura para Towercopter",
+  resumen: "Diseño e implementación de un sistema de control de altura para un monocóptero vertical mediante ESP32, motor brushless y controlador PID.",
+  contexto: "Proyecto académico · Control automático",
+  anio: "2026",
+  area: "Control",
+  estado: "Terminado",
+  destacado: false,
+  portada: "foto-final.jpg",
+  galeria: [
+    { archivo: "foto-final.jpg", titulo: "Prototipo físico terminado" },
+    { archivo: "montaje.jpg", titulo: "Estructura y sistema mecánico" },
+    { archivo: "simulink.png", titulo: "Modelo de control en Simulink" },
+    { archivo: "respuesta.png", titulo: "Respuesta del sistema en lazo cerrado" },
+    { archivo: "pid-tuner.png", titulo: "Sintonización del controlador PID" }
+  ],
+  descripcion: [
+    "Diseño y construcción de un monocóptero vertical de un grado de libertad (Towercopter), capaz de desplazarse y regular su altura mediante el control de la velocidad de un motor brushless.",
+    "El sistema integra un ESP32, un ESC de 40 A y un sensor ultrasónico para medir la posición de la plataforma móvil. La información adquirida se utiliza como retroalimentación para implementar el control automático en lazo cerrado.",
+    "Se realizó la identificación de la planta a partir de datos experimentales y se evaluaron diferentes modelos mediante MATLAB PID Tuner. Se seleccionó un modelo de dos polos reales (Two Real Poles), con un ajuste del 95.64% respecto a los datos de identificación.",
+    "Finalmente, se diseñó y ajustó el controlador PID en MATLAB/Simulink, comparando los parámetros obtenidos mediante sintonización automática y cálculo manual, y se realizaron pruebas sobre el prototipo físico."
+  ],
+  tecnologias: [
+    "ESP32",
+    "MATLAB",
+    "Simulink",
+    "Arduino IDE",
+    "Control PID",
+    "Motor BLDC",
+    "ESC 40 A",
+    "Sensor ultrasónico"
+  ],
+  resultados: [
+    "Identificación de la planta con un ajuste del 95.64%.",
+    "Implementación de control PID en lazo cerrado.",
+    "Adquisición de datos experimentales mediante ESP32.",
+    "Comparación entre sintonización automática y cálculo manual.",
+    "Construcción y validación experimental del prototipo físico."
+  ],
+  rol: "Coautor del proyecto. Participación en el diseño, implementación y evaluación del sistema de control PID.",
+  enlaces: [
+    { texto: "Informe técnico (PDF)", url: "informe-pid.pdf" }
+  ]
+},
+
 
 ];
