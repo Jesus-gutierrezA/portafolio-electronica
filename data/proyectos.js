@@ -184,7 +184,7 @@ window.PROYECTOS = [
   }
   
   {
-    id: "amplificador-estereo",
+    id: "Amplificador-Estereo-Ecualizador",
     titulo: "Amplificador estéreo con ecualizador pasivo integrado",
     resumen: "Sistema de audio estéreo con filtros pasivos de tres bandas, preamplificación MOSFET, amplificación TDA2050 y analizador de espectro con Arduino.",
     contexto: "Proyecto académico · Electrónica II · Universidad del Magdalena",
