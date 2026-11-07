@@ -218,7 +218,7 @@ window.PROYECTOS = [
   ],
   rol: "Coautor del proyecto. Participación en el diseño, implementación y evaluación del sistema de control PID.",
   enlaces: [
-    { texto: "Informe técnico (PDF)", url: "informe-pid.pdf" }
+    { texto: "Informe técnico (PDF)", url: "https://github.com/Jesus-gutierrezA/portafolio-electronica/blob/2ab22c8fd1de8b16915562262176c7e52ba97998/proyectos/towercopter-pid/informe-pid.pdf" }
   ]
 },
 
